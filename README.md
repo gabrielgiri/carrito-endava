@@ -18,7 +18,7 @@ node server.js                                                     # arrancar la
 
 ## Instalación resumida (windows)
 ```sh
-https://www.postgresql.org/                                       # Bajar PostgreSQL
+https://www.postgresql.org/                                       # Bajar es instalar PostgreSQL
 git clone https://github.com/gabrielgiri/carrito-endava.git       # Clonar el repo
 cd carrito-endava                                                 # Cambiar a la carpeta del repositorio local
 npm install                                                       # Instalar las dependencias del back
@@ -26,7 +26,23 @@ npm express                                                       # Instalar exp
 npm sequelize                                                     # Instalar sequelize
 cd public/node_modules/.bin                                       # Ir a la carpeta donde vamos a instalar bower
 bower install                                                     # Instalar el gestor de paquetes bower 
+
+en el archivo config.json modificar los siguiente valores con los que se setearon al momento de instalar postgresql
+
+{
+  "db": {
+    "username": "postgres",
+    "password": "endava",
+    "database": "postgres",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
+
 node rebuild_tables.js                                            # Armar la estructura de la DB
 node load_fixtures.js                                             # Cargar datos en la DB
 node server.js                                                    # Inicializar la app
+
+
+
 ```
