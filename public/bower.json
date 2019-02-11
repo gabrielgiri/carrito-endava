@@ -1,0 +1,24 @@
+{
+  "name": "CanjeTapas",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gabrielgiri/carrito-endava.git",
+  "authors": [
+    "Gabriel Giri"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.12.1",
+    "angular": "1.2.16",
+    "bootstrap": "3.1.1",
+    "angular-route": "1.2.16",
+    "moment": "~2.10.3"
+  }
+}

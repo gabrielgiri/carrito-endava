@@ -1,0 +1,71 @@
+﻿<p class="text-info">
+</p>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+
+            <!-- items -->
+            <table class="table table-bordered">
+
+                <!-- header -->
+                <tr class="well">
+                    <td><b>Producto</b></td>
+                    <td class="tdCenter"><b>Cantidad</b></td>
+                    <td class="tdRight"><b>Precio</b></td>
+                    <td />
+                </tr>
+
+                <!-- empty cart message -->
+                <tr ng-hide="cart.getTotalCount() > 0" >
+                    <td class="tdCenter" colspan="4">
+                        Carrito vacio.
+                    </td>
+                </tr>
+
+                <!-- cart items -->
+                <tr ng-repeat="item in cart.items | orderBy:'name'">
+                    <td>{{item.name}}</td>
+                    <td class="tdCenter">
+                        {{item.quantity}}
+                    </td>
+                    <td class="tdRight">{{item.price * item.quantity | currency}}</td>
+                    <td class="tdCenter" title="remove from cart">
+                        <a href="" ng-click="cart.addItem(item.sku, item.name, item.price, null, -10000000)" >
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- footer -->
+                <tr class="well">
+                    <td><b>Total</b></td>
+                    <td class="tdCenter"><b>{{cart.getTotalCount()}}</b></td>
+                    <td class="tdRight"><b>{{cart.getTotalPrice() | currency}}</b></td>
+                    <td />
+                </tr>
+            </table>
+        </div>
+
+        <!-- buttons -->
+        <div class="span4">
+            <p class="text-info">
+                <button style="background: white"
+                    class="btn btn-block" 
+                    onclick="window.location.href='#/'">
+                    <i class="glyphicon glyphicon-chevron-left"></i> volver
+                </button>
+                <button
+                    class="btn btn-block btn-default"
+                    onclick="window.location.href='#/checkout'" ng-show="loggedInUser != null">
+                    pagar
+                </button>
+                <button
+                        class="btn btn-block btn-danger"
+                        ng-click="cart.clearItems()">
+                    <i class="glyphicon glyphicon-trash"></i> vaciar carrito
+                </button>
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+﻿/*!
+ * Extend Bootstrap v2.3.1 to provide cell alignment (doh)
+ *
+ */
+.table td.tdRight {
+  @media screen and (min-width: 560px){
+    text-align: right;
+  } 
+}
+.table td.tdCenter {
+  text-align: center;
+}
+.table-nonfluid {
+  width: auto;
+}
+
+.well {
+  background: white;
+  color: rgb(255,79,0);
+}
+
+.form-control.txt-small{ width: 60px; }
+
+form .ng-invalid{
+  border: solid 1px red;
+}
+
+.product-img{
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 560px){
+  .product-img{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.table-products td{ display: block; }
+
+@media screen and (min-width: 560px){
+  .table-products td{ display: table-cell; }
+}
+
+
+@media screen and (min-width: 560px){
+  .top-button { float: right; }
+}
+  
