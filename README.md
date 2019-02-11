@@ -1,6 +1,6 @@
 ## Preview
 
-[![Carrito Endava Preview](images/carrito.jpg)]
+![Carrito Endava Preview](images/carrito.jpg)
 
 # Carrito Endava
 
