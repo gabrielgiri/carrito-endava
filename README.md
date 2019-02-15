@@ -7,7 +7,7 @@
 ```sh
 sudo apt install postgresql                                        # Download  PostgreSQL
 git clone https://github.com/gabrielgiri/carrito-endava.git        # Clone the repo
-cd carrito-endava                                                  # Move to the local repository 
+cd cart-endava                                                     # Move to the local repository 
 npm install                                                        # download the dependencies about back (express y sequelize)
 ( cd public ; ../node_modules/.bin/bower install )                 # download the dependencies to the  front (angular)
 node rebuild_tables.js                                             # Create the DM structure 
@@ -19,7 +19,7 @@ node server.js                                                     # inicializat
 ```sh
 https://www.postgresql.org/                                       # Download and install  PostgreSQL
 git clone https://github.com/gabrielgiri/carrito-endava.git       # Clone the  repo
-cd carrito-endava                                                 # Move to the local repository 
+cd cart-endava                                                    # Move to the local repository 
 npm install                                                       # Install dependencies to the  back
 npm express                                                       # Install  express
 npm sequelize                                                     # Install  sequelize
