@@ -16,27 +16,38 @@ node server.js                                                     # inicializat
 
 ## Instalation  (windows)
 ```sh
-https://www.postgresql.org/									# Download and install  PostgreSQL
-git clone https://github.com/gabrielgiri/cart-endava.github	# Clone the  repo
-cd cart-endava												# Move to the local repository 
+# Download and install  PostgreSQL
+https://www.postgresql.org/
 
-	Ensure you have already installed nodeJs & npm:
+# Clone the  repo
+git clone https://github.com/gabrielgiri/cart-endava.git
+
+# Move to the local repository 
+cd cart-endava												
+
+#Ensure you have already installed nodeJs & npm:
 node -v
-	You must see something like:
-v6.10.3
+
+#You must see something like:
+#v6.10.3
 
 npm -v
-	You must see something like:
-6.1.0
+#You must see something like:
+#6.1.0
 
-	If not install nodejs 									# Install NodeJs
+#If not install nodejs
 https://nodejs.org/es/download/
 
-npm Install 												# Install dependencies to the back-end
-npm express													# Install express
-npm sequelize												# Install sequelize
-cd public/node_modules/.bin									# Move to the file where you install bower
-bower Install 												# Install bower package 
+# Install dependencies to the back-end
+npm Install 
+# Install express												
+npm express	
+# Install sequelize												
+npm sequelize		
+# Move to the /node_modules/.bin folder to install bower										
+cd public/node_modules/.bin
+# Install bower package 
+bower Install									
 
 In the config.json modify the following fields with the data already setted on PostgreSQL
 {
@@ -49,9 +60,12 @@ In the config.json modify the following fields with the data already setted on P
   }
 }
 
-node rebuild_tables.js                                            # create the db structure 
-node load_fixtures.js                                             # Load the data into DB 
-node server.js                                                    # Inicilaize the  app
+# create the db structure
+node rebuild_tables.js  
+# Load the data into DB
+node load_fixtures.js       
+# Inicilaize the app
+node server.js                                                   
 
 
 
