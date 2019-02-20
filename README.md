@@ -16,14 +16,27 @@ node server.js                                                     # inicializat
 
 ## Instalation  (windows)
 ```sh
-https://www.postgresql.org/										# Download and install  PostgreSQL
-git clone https://github.com/gabrielgiri/cart-endava.github		# Clone the  repo
-cd cart-endava													# Move to the local repository 
-npm Install 													# Install dependencies to the back-end
-npm express														# Install express
-npm sequelize													# Install sequelize
-cd public/node_modules/.bin										# Move to the file where you install bower
-bower Install 													# Install bower package 
+https://www.postgresql.org/									# Download and install  PostgreSQL
+git clone https://github.com/gabrielgiri/cart-endava.github	# Clone the  repo
+cd cart-endava												# Move to the local repository 
+
+	Ensure you have already installed nodeJs & npm:
+node -v
+	You must see something like:
+v6.10.3
+
+npm -v
+	You must see something like:
+6.1.0
+
+	If not install nodejs 									# Install NodeJs
+https://nodejs.org/es/download/
+
+npm Install 												# Install dependencies to the back-end
+npm express													# Install express
+npm sequelize												# Install sequelize
+cd public/node_modules/.bin									# Move to the file where you install bower
+bower Install 												# Install bower package 
 
 In the config.json modify the following fields with the data already setted on PostgreSQL
 {
