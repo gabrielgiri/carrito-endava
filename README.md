@@ -1,7 +1,6 @@
 ## Preview
 
-
-# Cart Endava
+[![Carrito Endava Preview](images/carrito.jpg)]
 
 ## Instalation (linux)
 ```sh
