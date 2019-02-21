@@ -59,6 +59,9 @@ cd node_modules/.bin
 npm install bower
 ```
 ### Install bower package 
+cd .. 
+cd .. 
+cd public 
 on /public folder
 ```sh
 bower Install									
