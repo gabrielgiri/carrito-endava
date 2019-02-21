@@ -55,7 +55,7 @@ npm install sequelize
 ```
 ### Move to the /node_modules/.bin folder and install bower	
 ```sh
-cd public/node_modules/.bin
+cd node_modules/.bin
 npm install bower
 ```
 ### Install bower package 
