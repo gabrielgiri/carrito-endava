@@ -71,7 +71,7 @@ In the config.json modify the following fields with the data already setted on P
 {
   "db": {
     "username": "postgres",
-    "password": "endava",
+    "password": "endava",   #use your password entered in PostgreSQL 
     "database": "postgres",
     "host": "127.0.0.1",
     "dialect": "postgres"
@@ -90,7 +90,8 @@ node load_fixtures.js
 ```sh
 node server.js                                                   
 ```
-
+### Open a browser
+http://localhost:3000
 
 
 # Instalation PostgreSQL (for windows)
