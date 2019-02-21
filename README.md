@@ -2,33 +2,54 @@
 
 ![Carrito Endava Preview](images/carrito.jpg)
 
-# Carrito Endava
-
-## Instalación resumida (linux)
+## Instalation (linux)
 ```sh
-sudo apt install postgresql                                        # bajar PostgreSQL
-git clone https://github.com/gabrielgiri/carrito-endava.git        # clonar el repo
-cd carrito-endava                                                  # cambiar a la carpeta del repo local
-npm install                                                        # bajar las dependencias del back (express y sequelize)
-( cd public ; ../node_modules/.bin/bower install )                 # bajar las dependencias del front (angular)
-node rebuild_tables.js                                             # armar la estructura de la BBDD
-node load_fixtures.js                                              # cargarla con datos
-node server.js                                                     # arrancar la app
+sudo apt install postgresql                                        # Download  PostgreSQL
+git clone https://github.com/gabrielgiri/cart-endava.git           # Clone the repo
+cd cart-endava                                                     # Move to the local repository 
+npm install                                                        # download the dependencies about back (express y sequelize)
+( cd public ; ../node_modules/.bin/bower install )                 # download the dependencies to the  front (angular)
+node rebuild_tables.js                                             # Create the DM structure 
+node load_fixtures.js                                              # Load data 
+node server.js                                                     # inicializate the app
 ```
 
-## Instalación resumida (windows)
+## Instalation  (windows)
 ```sh
-https://www.postgresql.org/                                       # Bajar es instalar PostgreSQL
-git clone https://github.com/gabrielgiri/carrito-endava.git       # Clonar el repo
-cd carrito-endava                                                 # Cambiar a la carpeta del repositorio local
-npm install                                                       # Instalar las dependencias del back
-npm express                                                       # Instalar express
-npm sequelize                                                     # Instalar sequelize
-cd public/node_modules/.bin                                       # Ir a la carpeta donde vamos a instalar bower
-bower install                                                     # Instalar el gestor de paquetes bower 
+# Download and install  PostgreSQL
+https://www.postgresql.org/
 
-en el archivo config.json modificar los siguiente valores con los que se setearon al momento de instalar postgresql
+# Clone the  repo
+git clone https://github.com/gabrielgiri/cart-endava.git
 
+# Move to the local repository 
+cd cart-endava												
+
+#Ensure you have already installed nodeJs & npm:
+node -v
+
+#You must see something like:
+#v6.10.3
+
+npm -v
+#You must see something like:
+#6.1.0
+
+#If not install nodejs
+https://nodejs.org/es/download/
+
+# Install dependencies to the back-end
+npm Install 
+# Install express												
+npm express	
+# Install sequelize												
+npm sequelize		
+# Move to the /node_modules/.bin folder to install bower										
+cd public/node_modules/.bin
+# Install bower package 
+bower Install									
+
+In the config.json modify the following fields with the data already setted on PostgreSQL
 {
   "db": {
     "username": "postgres",
@@ -39,9 +60,12 @@ en el archivo config.json modificar los siguiente valores con los que se setearo
   }
 }
 
-node rebuild_tables.js                                            # Armar la estructura de la DB
-node load_fixtures.js                                             # Cargar datos en la DB
-node server.js                                                    # Inicializar la app
+# create the db structure
+node rebuild_tables.js  
+# Load the data into DB
+node load_fixtures.js       
+# Inicilaize the app
+node server.js                                                   
 
 
 
