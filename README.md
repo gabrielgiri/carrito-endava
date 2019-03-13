@@ -1,9 +1,5 @@
 # CART ENDAVA
 
-   ## Preview
-
-![Carrito Endava Preview](images/carrito.jpg)
-
 ## Instalation (linux)
 ```sh
 sudo apt install postgresql                                        # Download  PostgreSQL
